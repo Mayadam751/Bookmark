@@ -1,0 +1,74 @@
+<html>
+
+<head>
+  <title>Bookmark</title>
+  <link rel="icon" href="bookmark.png">
+  <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="main vh-100 py-5 position-relative">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 h-auto">
+          <div class="bookmarker d-flex justify-content-center align-items-center">
+            <h1 class="position-relative">Bookmarker</h1>
+          </div>
+          <div class="Bookmarks w-100 p-3 py-4 mt-5 d-flex flex-column justify-content-center align-items-center gap-4 my-3">
+            <h2>
+              <i class="fa-solid fa-bookmark"></i>
+              Bookmark your favorite sites
+              <i class="fa-solid fa-bookmark"></i>
+            </h2>
+            <div class="site-name w-100 d-flex flex-column justify-content-center">
+              <label for="bookmarkName" class="pb-2 fw-semibold fw-bold">
+                <i class="fa-solid fa-book-bookmark pe-2"></i>
+                Site Name</label>
+              <input type="text" placeholder="Bookmark Name" class="form-control" id="bookmarkName">
+            </div>
+            <div class="site-url w-100 d-flex flex-column justify-content-center">
+              <label for="bookmarkURL" class="pb-2 fw-semibold fw-bold">
+                <i class="fa-solid fa-link pe-2"></i>Site URL</label>
+              <input type="text" id="bookmarkURL" name="websiteName" class="form-control" placeholder="Website URL">
+
+            </div>
+
+            <button class="btn btn-submit px-5" id="submitBtn" onclick="addWebsite()">Submit</button>
+          </div>
+          <div class="tbl bg-light">
+            <table class="table text-center text-dark py-5">
+              <thead>
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+              </thead>
+              <tbody id="tBody">
+              </tbody>
+            </table>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  
+  <script src="index.js"></script>
+</body>
+
+</html>
